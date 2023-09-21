@@ -1,7 +1,8 @@
 FROM openjdk:11 AS build
 WORKDIR /app
 COPY . .
-RUN mvn clean package
+RUN apt-get update && apt-get install -y maven
+RUN mvn package -DskipTests
 
 FROM openjdk:11-jre-slim
 WORKDIR /app

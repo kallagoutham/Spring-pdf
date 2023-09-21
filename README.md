@@ -24,7 +24,7 @@ Install postman in order to test your endpoints.
 
 To run maven clean and install from the command line use the below commands:
 
-To build 						  : ``` mvn package -DskipTests```
+To build 						              : ``` mvn package -DskipTests```
 To perform clean+install          : ```mvn clean package```
 To run the spring boot application: ``` mvn spring-boot:run``` 
 
@@ -39,11 +39,11 @@ system.
 After running the application in your local system
 
 To upload a user details use this endpoint. This endpoint is of POST type.
-``` http://localhost:8080/api/v1/users/upload```
+  ``` http://localhost:8080/api/v1/users/upload```
 To view the cv uploaded by the particular User. This a GET type endpoint. This accepts a parameter id.
-``` http://localhost:8080/api/v1/users/get/cv```
+  ``` http://localhost:8080/api/v1/users/get/cv```
 To download the cv uploaded the by the particular user. This is GET type endpoint. This accepts a parameter id.
-``` http://localhost:8080/api/v1/users/download/cv```
+  ``` http://localhost:8080/api/v1/users/download/cv```
 
 ## Acknowledgments
 

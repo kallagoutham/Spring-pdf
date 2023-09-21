@@ -1,0 +1,6 @@
+spring\file\Controller\UserController.class
+spring\file\Model\User.class
+spring\file\FileApplication.class
+spring\file\Service\UserServiceImpl.class
+spring\file\Repository\UserRepository.class
+spring\file\Service\UserService.class

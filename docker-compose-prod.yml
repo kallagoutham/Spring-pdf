@@ -1,0 +1,18 @@
+version: '3'
+services:
+    postgres:
+        image: postgres:latest
+        container_name: postgres
+        environment:
+            - POSTGRES_PASSWORD=postgres
+        ports:
+            - "5432:5432"
+    spring-pdf:
+        image: kallagoutham/spring-pdf 
+        container_name: spring-pdf
+        environment:
+            - DB_SERVER=postgres
+        ports:
+            - "8080:8080"
+        links:
+            - postgres

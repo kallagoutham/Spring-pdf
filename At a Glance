@@ -1,0 +1,8 @@
+In Spring boot @RequestBody means use of JSON or XML data with maps your DTO bean. In case of MultipartFile you can't use JSON data so you can't use @RequestBody. Try with @ModelAttribute annotation.
+
+Whenever we write a docker file in which it is connected to a database server if we use mvn clean package it cleans and installs in installation process it will also run the tests in which the connection 
+to the database gets failed which in turn fails the build of docker image. so in such cases we have to mvn package -Dskiptests in which it cleans and installs by skipping the tests so that we can build 
+the docker image successfully.
+
+In ResponseEntity<> of spring boot we have to send in the format of ResponseEntity<body,headers,statuscode> ,here we have to create HttpHeaders headers = new HttpHeaders(); explicitly. to look that more simple 
+we can also use ResponseEntity.ok()..header().contentType().contentLength().body() like that we can configure any headers which make look simpler.
